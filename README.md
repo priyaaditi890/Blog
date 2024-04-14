@@ -1,0 +1,2 @@
+BLOG
+Welcome to my Fashion Blog! This project utilizes HTML, CSS, Node.js, and MongoDB to create a platform for sharing and discussing fashion trends, tips, and inspirations. With features like user authentication, CRUD operations for blog posts, image uploads, and comments, our Fashion Blog aims to provide a seamless and engaging experience for fashion enthusiasts. Feel free to explore the setup instructions, features, and contribute to our project!
