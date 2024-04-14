@@ -1,0 +1,34 @@
+<div class="author">
+  <h1 class="author__heading">All About Fashion</h1>
+  <p class="author__body">Aditi's Blog.</p>
+</div>
+
+<img src="/img/hero_img1.avif" alt="fashion is an art" class="hero-image" width="1000 " height="500">
+<img src="/img/hero_img.avif" alt="" class="hero-image" width="1000" height="500">
+<img src="/img/hero_img5.avif" alt="" class="hero-image" width="1000" height="500">
+ 
+<section class="articles">
+  <h2 class="articles__heading">Latest Posts</h2>
+
+  <ul class="article-ul">
+    <% data.forEach(post => { %>
+      <li>
+        <a href="/post/<%= post._id %>">;
+          <span><%= post.title %></span>
+          <span class="article-list__date"><%= post.createdAt.toDateString() %></span>
+        </a>
+      </li>
+    <% }) %>
+  </ul>
+
+
+  <% if (nextPage !== null) { %>
+    <a href="/?page=<%= nextPage %>" class="pagination">&lt; View Older Posts</a>
+  <% } %>
+ 
+
+  
+
+
+
+</section>`

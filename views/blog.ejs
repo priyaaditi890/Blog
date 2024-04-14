@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+      body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+header {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+
+.nav-links {
+    list-style-type: none;
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.nav-links li:last-child {
+    margin-right: 0;
+}
+
+.nav-links a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #0056b3;
+}
+
+.content {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20 20px;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.image-container span {
+    padding: 30px;
+    border: 2px solid #e7dede;
+    border-radius: 10px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+}
+
+.articles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    margin-top: 30px;
+    max-width: 1200px;
+    margin-left: 100px;
+}
+
+article {
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+article img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+article h3 {
+    margin-top: 50px;
+    font-size: 20px;
+    color: #333;
+}
+
+article p {
+    margin-top: 10px;
+    color: #666;
+}
+
+.description {
+    display: none;
+}
+
+.description:not(.hidden) {
+    display: block;
+}
+    </style>
+    <link rel="preload" href="image.jpg" as="image">
+</head>
+<body>
+    
+    <div class="image-container">
+        
+        <span>
+         <img src="img/blog3.svg" alt="Fashion">
+         <p>Embrace the beauty of nature with earthy tones</p>
+        </span>
+        <span>
+        <img src="img/blog4.svg" alt="Fashion">
+        <p>Embrace the tranquility of natural tones</p>
+        </span>
+        <span>
+        <img src="img/blog5.svg" alt="Fashion">
+        <p>Feel grounded in the beauty of organic textures</p>
+        </span>
+        <span>
+        <img src="img/blog6.svg" alt="Fashion">
+        <p>Find inspiration in the colors of the earth.</p>
+        </span>
+        <span>
+        <img src="img/img_ab1.jpg" alt="Snow">
+        <p>Channel the calmness of flowing rivers in your attire</p>
+        </span>
+        <span>
+            <img src="img/img_ab3.jpg" alt="Fashion">
+            <p>Explore the richness of nature's palette in your wardrobe</p>
+         </span>
+        
+        <span>
+        <img src="img/blog1.svg" alt="Fashion">
+        <p>Let the whisper of leaves inspire your style</p>
+        </span>
+      
+        <span>
+        <img src="img/blog2.svg" alt="Fashion">
+        <p>Wrap yourself in the warmth of autumnal hues.</p>
+        </span>
+        <span><img src="img/img_about2.jpg" alt="Forest">
+        <p>Organic textures, effortless grace.</p>
+        </span>
+      
+    </div>
+    
+   <nav>
+    
+    <ul class="nav-links">
+      <li><a href="#fashion" class="scroll-link">Fashion</a></li>
+      <li><a href="#beauty"  class="scroll-link">Beauty</a></li>
+    
+     
+      
+    </ul>
+  </nav>
+
+  <!-- Fashion Page Content -->
+  <div class="fashion-page">
+    <header>
+        <h1>Fashion Trends</h1>
+      </header>
+    
+      <section id="fashion" class="articles">
+        <article>
+          <img src="/img/fas1.jpg" alt="Summer Campaign">
+          <h3 class="item-title">The Best Summer Fashion Compaigns</h3>
+          <p>Summer is upon us...sort of. Here are the best of the campaigns that have rolled out thus far.</p>
+          <span>
+            <img src="img/img_abt4.jpg" alt="Fashion">
+            <p>Clothing is more than fabric; it's a language, conveying your mood, aspirations, and identity to the world around you</p>
+            </span>
+            <span>
+            <img src="/img/fas2.jpg" alt="Fashion">
+            <p>Ralph Lauren ‘Only Polo’
+                COURTESY OF RALPH LAUREN</p>
+        </span>
+        <span>
+            <img src="/img/fas3.jpg" alt="Fashion">
+            <p>DKNY
+                Starring Kaia Gerber
+                
+                COURTESY OF DKNY</p>
+               
+        </span>
+        <span>
+            <img src="img/fas4.jpg" alt="Fashion">
+            <p>Fashion Forward Forecast </p>
+         </span>
+         <span>
+            <img src="img/fas5.jpg" alt="Fashion">
+            <p>Helmut Lang
+                Starring Sophia Roe
+                
+                HUY LUONG</p>
+         </span>
+            
+
+        </article>
+      
+    <article>
+        <img src="/img/bags.jpg" alt="Fashion Item 2">
+        <h3 class="item-title">The Hottest Bags For Spring</h3>
+        <p class="item-description"></p>
+        <span>
+            <img src="img/bag1.jpg" alt="Fashion">
+            <p>Large & In Charge</p>
+            </span>
+            <span>
+                <img src="img/bag2.jpg" alt="Fashion">
+                <p>Take It From the Top</p>
+             </span>
+             <span>
+                <img src="img/bag3.jpg" alt="Fashion">
+                <p>Unstructured and Unbothered</p>
+             </span>
+             <span>
+                <img src="img/bag4.jpg" alt="Fashion">
+                <p>Extra Cargo </p>
+             </span>
+                
+      </div>
+    </article>
+      
+    </div>
+  </div>
+
+
+  <!-- Beauty Page -->
+  <div class="Beauty-Page">
+    <header>
+        <h1>Beauty</h1>
+      </header>
+   
+      <section id="beauty" class="articles">
+        <article>
+            <h3> Hairstyles and Haircuts</h3>
+          <img src="/img/hair.jpg" alt="Best Shampoo Brands">
+          <h3 class="item-title">Best Shampoo Brands</h3>
+          <p>When it comes to your hair, the real hard hitters are your shampoo and conditioner. It all begins in the shower; without the right shampoo, it’s hard for your hair to be as healthy or look as good as you’d like it to. However, with so many choices in-store and online, finding your perfect match can lead to a serious case of decision paralysis, especially when not every formula treats everyone’s strands in the way they deserve.</p>
+          <span>
+            <img src="img/hair1.jpg" alt="Fashion">
+            <p>
+                1
+                BEST FOR TEXTURED HAIR
+                SheaMoisture Curl and Shine Coconut Shampoo Coconut and Hibiscus</p>
+            </span>
+           
+        <span>
+            <img src="/img/hair2.jpg" alt="Fashion">
+            <p>
+                2
+                BEST SPLURGE
+                Oribe Hair Alchemy Strengthening Shampoo</p>
+               
+        </span>
+        <span>
+            <img src="img/hair3.jpg" alt="Fashion">
+            <p>3
+                BEST EDITORIAL-QUALITY
+                Bumble and Bumble Hairdresser's Invisible Oil Ultra Rich Shampoo</p>
+         </span>
+         <span>
+            <img src="img/hair4.jpg" alt="Fashion">
+            <p>4
+                BEST BLACK-OWNED
+                BREAD BEAUTY SUPPLY Clear-Wash: Detox Clarifying Shampoo</p>
+         </span>
+         
+         
+          
+            
+          
+          <h2>Tips To Make Your Hair Grow Stronger</h2>
+          <img src="/img/hgrow.jpg" alt="Best Shampoo Brands">
+          <p>Eat a healthy, balanced diet
+             <p>Manage your stress levels</p>
+             <p> Avoid excessive heat styling</p>  
+             <p>  Use bond-building products</p> 
+            <p>Create a scalp care routine
+          </p>
+          <span>
+            
+        </article>
+      
+    <article>
+        <h3>Makeup and Skincare</h3>
+        <img src="/img/make.jpg" alt="Fashion Item 2">
+        <h3 class="item-title">Makeup Organizers for Product Hoarders</h3>
+        <p class="item-description">The clock is ticking. You have only a few minutes left before have to head out the door and you can't seem to find your trusty mascara. You rummage through your makeup bag hoping to locate your items but you accidentally crack your favorite blush in the process. All of this could’ve been avoided if you'd purchased the makeup storage tower that’s been sitting in your cart for weeks.</p>
+        <span>
+            <img src="img/make1.jpg" alt="Fashion">
+            <p>1
+                BEST FOR SMALL PRODUCTS
+                PTBSZCWY Makeup Organizer</p>
+            </span>
+            <span>
+                <img src="img/make2.jpg" alt="Fashion">
+                <p>2
+                    BEST STACKABLE MAKEUP ORGANIZER
+                    READAEER Makeup Organizer with 6 Drawers</p>
+             </span>
+             <span>
+                <img src="img/make3.jpg" alt="Fashion">
+                <p>3
+                    BEST LUXURY MAKEUP ORGANIZER
+                    Ihuiniya Large Makeup Organizer Box</p>
+             </span>
+             <span>
+                <img src="img/make4.jpg" alt="Fashion">
+                <p>4
+                    MOST INNOVATIVE MAKEUP ORGANIZER
+                    Miss Puff Makeup Organizer, Cosmetic Storage Display Cases with Mirror
+                     </p>
+             </span>
+             <span>
+                <img src="img/make5.jpg" alt="Fashion">
+                <p>5
+                    BEST TRAVEL MAKEUP ORGANIZER
+                    DIMJ 2-in-1 Travel Makeup Bag Organizer
+                     </p>
+             </span>
+                
+      </div>
+    </article>
+      
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>        
+  
+            
+      

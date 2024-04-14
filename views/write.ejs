@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write a New Post</title>
+    
+</head>
+<body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+        
+        #post-form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        
+        label {
+            font-weight: bold;
+        }
+        
+        textarea {
+            width: 100%;
+            resize: vertical; /* Allow vertical resizing */
+            min-height: 100px;
+            padding: 5px;
+        }
+        
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: right;
+        }
+        
+        button:hover {
+            background-color: #45a049;
+        }
+    
+    </style>
+    <h1>Write a New Post</h1>
+    <a href="/write">Write a New Post</a>
+    <form id="post-form">
+        <label for="title">Title:</label><br>
+        <input type="text" id="title" name="title" required><br>
+        <label for="content">Content:</label><br>
+        <textarea id="content" name="content" rows="4" required></textarea><br>
+        <button type="submit">Publish</button>
+      
+    </form>
+    
+    <script>
+        document.getElementById('post-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            // Retrieve title and content from the form
+            const title = document.getElementById('title').value;
+            const content = document.getElementById('content').value;
+
+            // Log the post data to the console
+            console.log('New Post:');
+            console.log('Title:', title);
+            console.log('Content:', content);
+
+            // Optionally, you can clear the form fields after submission
+            document.getElementById('title').value = '';
+            document.getElementById('content').value = '';
+        });
+    </script>
+</body>
+</html>

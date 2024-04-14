@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #e3a6a6;
+    }
+    .container {
+      max-width: 700px;
+      margin: 50px auto;
+      padding: 40px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      text-align: center;
+    }
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+    input[type="text"],
+    input[type="tel"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+    textarea {
+      resize: vertical;
+    }
+    button[type="submit"] {
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+
+    .social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.social-icons img {
+  width: 50px; /* Adjust icon size as needed */
+  height: auto;
+  border-radius: 50%; /* Make the icons circular */
+  transition: transform 0.3s ease-in-out; /* Add transition effect */
+}
+
+.social-icons img:hover {
+  transform: scale(1.2); /* Increase size on hover */
+}
+  </style>
+
+
+</head>
+<body>
+  <div class="container">
+    <h1>Contact</h1>
+    <form action="/contact" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone">
+
+      <label for="message">Type your Messge here:</label>
+      <textarea name="message" id="message" rows="4" required></textarea> 
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <div class="social-icons">
+    <a href="https://www.instagram.com/aditipriya39/" target="_blank"><img src="/img/insta.jpg" alt="Instagram"></a>
+    <a href="https://www.linkedin.com/in/aditi-priya-95849a284/" target="_blank"><img src="/img/linkedln.png" alt="LinkedIn"></a>
+    <a href="https://web.snapchat.com/" target="_blank"><img src="/img/snap.png" alt="Snapchat"></a>
+    <a href="https://www.facebook.com/aditi.priya.104418" target="_blank"><img src="/img/facebook.jpg" alt="Facebook"></a>
+  </div>
+</body>
+</html>
