@@ -12,7 +12,7 @@ const path = require('path');
 const { isActiveRoute } = require('./server/helpers/routeHelpers');
 
 // Import database connection function
-const connectDB = require('./server/config/db');
+const connectDB = require('./server/models/config/db');
 
 // Create Express app
 const app = express();
